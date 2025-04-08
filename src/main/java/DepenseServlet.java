@@ -12,12 +12,6 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class DepenseServlet  extends HttpServlet{
-
-
-
-
-public class CreditServlet extends HttpServlet {
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         
