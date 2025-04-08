@@ -17,9 +17,32 @@
     <input type="Submit" Value="Submit">
 </form>
 
- 
+ <h1>Credit List</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Libelle</th>
+            <th>montant</th>
+            <th>rest</th>
+        </tr>
+        <%
+            List<Credit> employees = (List<Credit>) request.getAttribute("credits");
+            if (employees != null) {
+                for (Credit employee : employees) {
+        %>
+            <tr>
+                <td><%= employee.getId() %></td>
+                <td><%= employee.getLibelle() %></td>
+                <td><%= employee.getMontant() %></td>
+                <td><%= employee.getRest() %></td>
+            </tr>
+        <%
+                }
+            }
+        %>
+    </table>
 
 
- <a href="depenseFormServlet">Depense_link</a>   
+ <a href="depenseFormServlet">Depense</a>   
 </body>
 </html>
