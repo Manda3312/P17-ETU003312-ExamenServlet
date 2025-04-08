@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class Util {
     private static final String URL = "jdbc:mysql://172.80.237.53/db_s2_ETU003312?useSSL=false&serverTimezone=UTC";
-    private static final String USER = "root";  // Correct variable name casing
+    private static final String USER = "ETU003312";  // Correct variable name casing
     private static final String PASSWORD = "hvs3CCHV";
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
