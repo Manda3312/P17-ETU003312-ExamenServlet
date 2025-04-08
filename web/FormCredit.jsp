@@ -13,7 +13,7 @@
     
 <form action="creditServlet" methode="Post">
     <p>Libelle: </p><input type="text" name="Libelle" id="Libelle">
-    <p>montant: </p></p><input type="number" name="montant" id="montant">
+    <p>-ontant: </p></p><input type="number" name="montant" id="montant">
     <input type="Submit" Value="Submit">
 </form>
 
